@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "CLI for getting weather",
   "main": "index.js",
+  "type": "module",
+  "bin": {
+    "weather": "index.js"
+  },
   "scripts": {
-    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,5 +15,10 @@
     "weather"
   ],
   "author": "Larkov Aleksandr",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chalk": "^5.0.1",
+    "dedent-js": "^1.0.1"
+  }
 }
